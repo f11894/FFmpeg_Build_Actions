@@ -31,7 +31,7 @@ jobs:
             git
             base-devel
             autotools
-        msystem: MINGW64
+        msystem: UCRT64
         path-type: strict
     - name: build_dav1d
       shell: msys2 {0}
