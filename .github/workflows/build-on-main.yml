@@ -38,7 +38,7 @@ jobs:
       run: |
         git clone -b 0.9.2 https://code.videolan.org/videolan/dav1d
         cd dav1d && mkdir dav1d_build
-        cd dav1d_build && meson .. --buildtype release --default-library static --prefix=/mingw64/
+        cd dav1d_build && meson .. --buildtype release --default-library static --prefix=/ucrt64/
         ninja
         ninja install
     - name: build_ffmpeg
