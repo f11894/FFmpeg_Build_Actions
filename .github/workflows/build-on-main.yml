@@ -47,7 +47,7 @@ jobs:
         export LDFLAGS="-static -static-libgcc -static-libstdc++ -s"
         git clone https://github.com/ffvvc/FFmpeg
         cd ffmpeg
-        ./configure --disable-debug --enable-version3 --enable-gpl --enable-ffplay --enable-libdav1d --pkg-config-flags=--static --enable-static
+        ./configure --disable-debug --disable-docs --enable-version3 --enable-gpl --enable-ffplay --enable-libdav1d --pkg-config-flags=--static --enable-static
         make -j 2
     - name: postprocessing
       shell: cmd
