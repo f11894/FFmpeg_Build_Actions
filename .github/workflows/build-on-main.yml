@@ -45,7 +45,7 @@ jobs:
       shell: msys2 {0}
       run: |
         export LDFLAGS="-static -static-libgcc -static-libstdc++ -s"
-        git clone https://github.com/ffvvc/FFmpeg
+        git clone https://github.com/FFmpeg/FFmpeg
         cd ffmpeg
         ./configure --disable-debug --disable-doc --enable-version3 --enable-gpl --enable-ffplay --enable-libdav1d --pkg-config-flags=--static --enable-static
         make -j 2
